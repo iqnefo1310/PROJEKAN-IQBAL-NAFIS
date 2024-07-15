@@ -76,4 +76,3 @@ next.addEventListener("click", () => {
 });
 
 getMovie();
-
