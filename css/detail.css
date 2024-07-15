@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url(../assets/Canva.lnk);
+    background-size: cover;
+    background-repeat: no-repeat;
+    >a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 27, 6);
+        padding: 10px;
+        border-radius: 10px;
+        /* margin: 50px 50px; */
+        width: 5%;
+    }
+}
+.detail-movie{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.detail-movie .frame-cont{
+    width: 100%;
+    height: auto;
+    >iframe{
+        height: 90vh;
+        width: 100%;
+        border-radius: 20px;
+        /* padding: 10px; */
+        background-color: black;
+    }
+}
+figure{
+    background-color: #07203576;
+    width: 99%;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    >img{
+        width: 50%;
+    }
+   
+}
+
+figcaption{
+    >p{
+        padding: 10px;
+        font-size: 2vw;
+    }
+    >h1{
+        color: deeppink;
+        text-shadow: 0 0 10px black;
+        padding: 10px;
+        font-size: 3vw;
+    }
+    
+}
+
+@media (max-width: 400px){
+    .detail-movie .frame-cont{
+        >iframe{
+            height: 30vh;
+        }
+    }
+    .detail-movie{
+        min-height: 50vh;
+        margin-top: 10px;
+    }
+    main{
+        >a{
+            width: 15%;
+        }
+    }
+}
+
